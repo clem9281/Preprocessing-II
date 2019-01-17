@@ -9,3 +9,17 @@
   border-radius: @border-radius;
   margin: @margin;
 }
+
+//keyframe mixins for animation
+.mixin-frames(@name, @from, @to) {
+    @keyframes @name {
+        from {left: @from};
+        to {left: @to};
+    }
+}
+
+
+.animate(@name, @duration) {
+  animation-name: @name;
+  animation-duration: @duration;
+}

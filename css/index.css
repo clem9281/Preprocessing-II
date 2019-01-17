@@ -253,7 +253,18 @@ nav .container div a {
   }
 }
 .home .content-section .img-content img {
+  position: relative;
   border-radius: 10px;
+  animation-name: from-left;
+  animation-duration: 2s;
+}
+@keyframes from-left {
+  from {
+    left: 200%;
+  }
+  to {
+    left: 0;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -271,6 +282,18 @@ nav .container div a {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+.home .inverse-content .img-content img {
+  animation-name: from-right;
+  animation-duration: 2s;
+}
+@keyframes from-right {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+  }
 }
 .home .content-destination {
   width: 75%;
