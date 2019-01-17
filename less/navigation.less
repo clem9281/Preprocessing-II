@@ -2,15 +2,28 @@
 
 nav {
   border-bottom: 2px dashed @navigation-border;
-  padding: 25px 0;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    a {
-      color: black;
-      text-decoration: none;
-      padding: 0 2.7rem 0 0.3rem;
+    padding: 25px 0;
+    @media @phone {
+      padding: 40px 0 0;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    div {
+      @media @phone {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 10px 0;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 0 2.7rem 0 0.3rem;
+      }
     }
   }
 }

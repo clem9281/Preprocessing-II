@@ -171,15 +171,30 @@ img {
 }
 /* COMPONENTS */
 nav {
-  border-bottom: 2px dashed #C0C0C0;
-  padding: 25px 0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  padding: 25px 0;
 }
-nav .container a {
+@media (max-width: 500px) {
+  nav .container {
+    padding: 40px 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  nav .container div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+nav .container div a {
   color: black;
   text-decoration: none;
   padding: 0 2.7rem 0 0.3rem;
@@ -187,7 +202,7 @@ nav .container a {
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
-  background: #FFEBCD;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -200,7 +215,7 @@ nav .container a {
   /* CONTENT */
 }
 .home header {
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home header h2 {
   margin: 20px 0 0;
@@ -227,7 +242,7 @@ nav .container a {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -246,7 +261,7 @@ nav .container a {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
@@ -255,7 +270,7 @@ nav .container a {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
-  background: #17A2B8;
+  background: #17a2b8;
   color: white;
   font-size: 2rem;
   -webkit-border-radius: 15px;
