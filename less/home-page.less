@@ -1,6 +1,4 @@
 .home {
-  @media @phone {
-  }
   /* HEADER */
   header {
     border-bottom: 2px dashed @navigation-border;
@@ -23,11 +21,16 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @phone {
+        width: 100%;
+      }
     }
-
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -42,6 +45,9 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone {
+        order: -1;
+      }
     }
 
     .img-content {
@@ -53,6 +59,9 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -64,9 +73,16 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @phone {
+      flex-wrap: wrap;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone {
+        margin: 0 auto 20px;
+        width: 75%;
+      }
 
       //button styles
       .btn {
@@ -76,6 +92,10 @@
         text-align: center;
         border: none;
         cursor: pointer;
+        @media @phone {
+          width: 100%;
+          margin-top: 5px;
+        }
       }
     }
   }
