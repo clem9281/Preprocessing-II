@@ -169,6 +169,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 90%;
+  }
+}
 /* COMPONENTS */
 nav {
   border-bottom: 2px dashed #c0c0c0;
@@ -280,5 +285,6 @@ nav .container div a {
   width: 82%;
   padding: 15px 2rem;
   text-align: center;
+  border: none;
   cursor: pointer;
 }
