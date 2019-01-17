@@ -36,8 +36,11 @@
         position: relative;
         border-radius: 10px;
         //animation
-        .animate(from-left, 2s);
+        .animate(from-left, 4s);
         .mixin-frames(from-left, 200%, 0);
+        @media @phone {
+          width: 100%;
+        }
       }
     }
   }
@@ -59,8 +62,9 @@
       padding-left: 0;
       //animation
       img {
-        .animate(from-right, 2s);
-        .mixin-frames(from-right, -200px, 0);
+        //nested this image because it needed to be more specific to override the animation on the image above it
+        .animate(from-right, 4s);
+        .mixin-frames(from-right, -200%, 0);
       }
     }
   }

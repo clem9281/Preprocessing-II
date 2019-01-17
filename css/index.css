@@ -256,7 +256,7 @@ nav .container div a {
   position: relative;
   border-radius: 10px;
   animation-name: from-left;
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 @keyframes from-left {
   from {
@@ -264,6 +264,11 @@ nav .container div a {
   }
   to {
     left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
   }
 }
 .home .inverse-content {
@@ -285,11 +290,11 @@ nav .container div a {
 }
 .home .inverse-content .img-content img {
   animation-name: from-right;
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 @keyframes from-right {
   from {
-    left: -200px;
+    left: -200%;
   }
   to {
     left: 0;
