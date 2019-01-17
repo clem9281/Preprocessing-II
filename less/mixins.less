@@ -1,1 +1,25 @@
 // Mixins in here
+
+.custom-button(@bgcolor, @font-color, @font-size, @border-radius, @margin) {
+  background: @bgcolor;
+  color: @font-color;
+  font-size: @font-size;
+  -webkit-border-radius: @border-radius;
+  -mox-border-radius: @border-radius;
+  border-radius: @border-radius;
+  margin: @margin;
+}
+
+//keyframe mixins for animation
+.mixin-frames(@name, @from, @to) {
+    @keyframes @name {
+        from {left: @from};
+        to {left: @to};
+    }
+}
+
+
+.animate(@name, @duration) {
+  animation-name: @name;
+  animation-duration: @duration;
+}
