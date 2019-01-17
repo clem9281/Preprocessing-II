@@ -171,7 +171,7 @@ img {
 }
 /* COMPONENTS */
 nav {
-  border-bottom: 1px dashed black;
+  border-bottom: 2px dashed #C0C0C0;
   padding: 25px 0;
 }
 nav .container {
@@ -200,7 +200,7 @@ nav .container a {
   /* CONTENT */
 }
 .home header {
-  border-bottom: 1px dashed black;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home header h2 {
   margin: 20px 0 0;
@@ -253,4 +253,17 @@ nav .container a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #17A2B8;
+  color: white;
+  font-size: 2rem;
+  -webkit-border-radius: 15px;
+  -mox-border-radius: 15px;
+  border-radius: 15px;
+  margin: 12px 0;
+  width: 82%;
+  padding: 15px 2rem;
+  text-align: center;
+  cursor: pointer;
 }

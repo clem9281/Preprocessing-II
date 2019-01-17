@@ -1,5 +1,11 @@
 // Mixins in here
 
-.bottom-line() {
-  border-bottom: 1px dashed black;
+.custom-button(@bgcolor, @font-color, @font-size, @border-radius, @margin) {
+  background: @bgcolor;
+  color: @font-color;
+  font-size: @font-size;
+  -webkit-border-radius: @border-radius;
+  -mox-border-radius: @border-radius;
+  border-radius: @border-radius;
+  margin: @margin;
 }
